@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+:root{
+   --primary:#030a16;
+   --secondary:#323946;
+   --green:#7cf03d;
+   --white:#fff;
+   --blue:
+}
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:"Roboto",sans-serif;
+}
+
+body{
+   background:var(--primary);
+   color:var(--white);
+}
+
+/* Container */
+.main-container{
+   width:100%;
+   padding:20px 5%;
+}
+
+/* Header */
+header{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   width:100%;
+}
+
+/* Logo */
+.brand-info{
+   display:flex;
+   align-items:center;
+   gap:12px;
+}
+
+.brand-info img{
+   width:60px;
+   height:60px;
+   border-radius:50%;
+   object-fit:cover;
+}
+
+.brand-info h2{
+   color: #4f6cff;
+}
+
+/* Menu */
+.menu-area{
+   position:relative;
+}
+
+nav{
+   display:flex;
+   gap:25px;
+   
+}
+
+nav a{
+   text-decoration:none;
+   color:white;
+   font-size:18px;
+   transition:0.3s;
+   
+   
+}
+
+nav a:hover{
+   color:var(--green);
+}
+
+/* Hide Checkbox */
+#menu-toggle{
+   display:none;
+}
+
+/* Menu Icon */
+.menu-icon{
+   display:none;
+   font-size:30px;
+   cursor:pointer;
+   color:white;
+}
+
+/* Main */
+main{
+   height:80vh;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   font-size:40px;
+   color:var(--green);
+}
+     /* nav anker a tag ka hai */
+
+.navlink.active{
+    color: var(--green);
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+   .menu-icon{
+      display:block;
+   }
+
+   nav{
+      position:absolute;
+      top:50px;
+      right:0;
+      background:var(--secondary);
+      width:220px;
+      flex-direction:column;
+      padding:20px;
+      border-radius:10px;
+
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(-10px);
+      transition:0.3s;
+   }
+
+   #menu-toggle:checked ~ nav{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
+   }
+}
+     
+        /* Second media queries */
+
+@media screen and (width >= 1250px) {
+      .main-container{
+        max-width: 1200px;
+      }  
+      .brand-info{
+        gap: 35px;
+      }
+
+      .brand-info img{
+        width: 100px;
+        height: 100px;
+      }
+
+      .brand-info h2{
+        font-size: 2.5rem;
+      }
+      nav{
+        gap: 2.5rem;
+      }
+
+      nav a{
+        font-size: 1.5rem;
+      }
+}
