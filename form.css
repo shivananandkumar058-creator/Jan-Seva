@@ -1,0 +1,91 @@
+
+.document-section{
+    padding:80px 5%;
+    background:#0f1023;
+    color:#fff;
+    margin-top: 40px;
+    
+}
+
+.document-section h2{
+    text-align:center;
+    color:#4f6cff;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.document-form{
+    max-width:700px;
+    margin:auto;
+    background:#1d1f38;
+    padding:30px;
+    border-radius:20px;
+}
+
+.document-form input,
+.document-form select{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:#2b2d4a;
+    color:#fff;
+}
+
+.search-btn{
+    width:100%;
+    padding:15px;
+    background:#4f6cff;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.document-preview{
+    max-width:700px;
+    margin:30px auto;
+    text-align:center;
+    background:#1d1f38;
+    padding:40px;
+    border-radius:20px;
+}
+
+.document-preview i{
+    font-size:80px;
+    color:#4f6cff;
+    margin-bottom:20px;
+}
+
+.download-btn,
+.print-btn{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.download-btn{
+    background:#00b894;
+}
+
+.print-btn{
+    background:#4f6cff;
+}
+
+/* Tablet */
+@media(min-width:768px){
+    .document-form{
+        padding:40px;
+    }
+}
+
+/* Desktop */
+@media(min-width:1024px){
+    .document-section h2{
+        font-size:45px;
+    }
+}
